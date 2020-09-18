@@ -169,58 +169,66 @@
 /* tredicesimo */
 .ex-13-button:hover .ex-13-top-white{
     animation: box-text-rotation 3s linear;
+    /* background-color: red; */
 }
 
 .ex-13-button:hover .ex-13-bottom-white{
     animation: box-text-rotation2 3s linear;
+    /* background-color: green; */
 }
 
 @keyframes box-text-rotation {
     0% {
-        transform: translateX(0);
+        left: 16px;
+        top: -10px;
     }
-    20% {
-        transform: translateX(20%);
+    35% {
+        left: 150px ;
+        top: -10px;
     }
-    40% {
-        transform: translateX(50%);
-    }
-    60% {
-        transform: translateX(100px);
-    }
-    70% {
-        transform: translateX(50%);
+    45% {
+        left: 150px;
+        top: 55px;
     }
     80% {
-        transform: translateX(20%);
+        left: -10px;
+        top: 55px;
+    }
+    95% {
+        left: -10px;
+        top: -10px;
     }
     100% {
-        transform: translateX(0%);
+        left: 16px;
+        top: -10px;
     }
 
 }
 
 @keyframes box-text-rotation2 {
     0% {
-        transform: translateX(0);
+        right: 40px;
+        bottom: -10px;
     }
-    20% {
-        transform: translateX(-20%);
+    35% {
+        right: 150px ;
+        bottom: -10px;
     }
-    40% {
-        transform: translateX(-50%);
-    }
-    60% {
-        transform: translateX(-90px);
-    }
-    70% {
-        transform: translateX(-50%);
+    45% {
+        right: 150px;
+        bottom: 55px;
     }
     80% {
-        transform: translateX(-20%);
+        right: -10px;
+        bottom: 55px;
+    }
+    95% {
+        right: -10px;
+        bottom: -10px;
     }
     100% {
-        transform: translateX(0%);
+        right: 40px;
+        bottom: -10px;
     }
 
 }
