@@ -1,0 +1,172 @@
+/* __primo__ */
+.ex-1-square {
+    transition: background-color 0.8s ease-in 0s;
+}
+
+.ex-1-square:hover {
+    background-color: red;
+}
+
+/* ___secondo__ */
+.ex-2-square {
+    transition: width 1s ease-in 0s;
+}
+
+.ex-2-square:active {
+    width: 100%;
+}
+
+/* ___terzo___ */
+.ex-3-square {
+    transition: all 1s ease-in 0s;
+}
+
+.ex-3-square:hover {
+    border-radius: 50%;
+}
+
+/* ___quarto___ */
+.ex-4-square {
+    transition: all 1s ease-in 0.2s;
+}
+
+.ex-4-square:hover {
+    opacity: 0;
+}
+
+/* ___quinto___ */
+
+.ex-5-square {
+    transition: transform 1s ease-in 0s;
+}
+
+.ex-5-square:hover {
+    transform: scale(1.8);
+}
+
+.ex-5-square:active {
+    transform: scale(0.5);
+}
+
+/*sesto*/
+.ex-6-img {
+    transition: filter 0s ease-out 0s;
+}
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+/*settimo*/
+.ex-7-img {
+    transition: all 1.5s ease-in 0s;
+}
+
+.ex-7-img:hover {
+    filter: grayscale(100%) sepia(70%);
+}
+
+/*ottavo*/
+
+.ex-8-img {
+    transition: all 1.8s ease-in 0s;
+}
+
+.ex-8-img:hover {
+    filter: invert(20%) saturate(3) ;
+    border-radius: 40px;
+}
+
+/*nono*/
+
+.ex-9-img {
+    transition: all 1s ease-in 0s;
+}
+
+.ex-9-img:hover {
+    filter: saturate(2.5) brightness(0.5) ;
+    border-radius: 30px;
+    transform: scale(1.5);
+}
+
+/*decimo*/
+
+.ex-10-icon {
+    animation: icon-rotation 2s infinite linear;
+}
+
+@keyframes icon-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg); /*-360 antiorario*/
+    }
+}
+
+/*undicesimo*/
+
+.ex-11-icon:hover {
+    animation: icon-half-rotation 2s linear;
+}
+
+@keyframes icon-half-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    /* 20% {
+        transform: rotate(65deg);
+    }
+    40% {
+        transform: rotate(130deg);
+    }
+    60% {
+        transform: rotate(195deg);
+    } */
+    80%{
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*dodicesimo*/
+
+.ex-12-button:hover .ex-12-top-white, .ex-12-bottom-white {
+    animation: text-half-rotation 1s linear;
+    /* background-color: red; */
+}
+
+/* @keyframes text-half-rotation {
+    0% {
+        transform: matrix(20);
+    }
+}
+    50% {
+        transform: matrix(30);
+    }
+}
+    100% {
+        transform: rotate(40);
+    }
+} */
+
+@keyframes text-half-rotation {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(90px);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* togliere questa scritta */
