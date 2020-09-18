@@ -133,21 +133,12 @@
 
 /*dodicesimo*/
 
-.ex-12-button:hover .ex-12-top-white, .ex-12-bottom-white {
+.ex-12-button:hover .ex-12-top-white {
     animation: text-half-rotation 1s linear;
 }
 
 .ex-12-button:hover .ex-12-bottom-white {
     animation: text-half-rotation2 1s linear;
-}
-
-@keyframes text-half-rotation {
-    from {
-        transform: translateX(0px);
-    }
-    to {
-        transform: translateX(90px);
-    }
 }
 
 @keyframes text-half-rotation {
@@ -175,9 +166,64 @@
     }
 }
 
+/* tredicesimo */
+.ex-13-button:hover .ex-13-top-white{
+    animation: box-text-rotation 3s linear;
+}
 
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: box-text-rotation2 3s linear;
+}
 
+@keyframes box-text-rotation {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(20%);
+    }
+    40% {
+        transform: translateX(50%);
+    }
+    60% {
+        transform: translateX(100px);
+    }
+    70% {
+        transform: translateX(50%);
+    }
+    80% {
+        transform: translateX(20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
 
+}
+
+@keyframes box-text-rotation2 {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-20%);
+    }
+    40% {
+        transform: translateX(-50%);
+    }
+    60% {
+        transform: translateX(-90px);
+    }
+    70% {
+        transform: translateX(-50%);
+    }
+    80% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+
+}
 
 
 
