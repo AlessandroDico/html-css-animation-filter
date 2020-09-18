@@ -135,33 +135,45 @@
 
 .ex-12-button:hover .ex-12-top-white, .ex-12-bottom-white {
     animation: text-half-rotation 1s linear;
-    /* background-color: red; */
 }
 
-/* @keyframes text-half-rotation {
-    0% {
-        transform: matrix(20);
-    }
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: text-half-rotation2 1s linear;
 }
-    50% {
-        transform: matrix(30);
-    }
-}
-    100% {
-        transform: rotate(40);
-    }
-} */
 
 @keyframes text-half-rotation {
     from {
-        transform: translateX(0);
+        transform: translateX(0px);
     }
     to {
         transform: translateX(90px);
     }
 }
 
+@keyframes text-half-rotation {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(90px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
+
+@keyframes text-half-rotation2 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-90px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
 
 
 
